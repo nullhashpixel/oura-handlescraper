@@ -1,0 +1,32 @@
+[source]
+type = "N2C"
+address = ["Unix", "/node-ipc/node.socket"]
+magic = "mainnet"
+
+[source.intersect]
+type = "Point"
+value = [
+    55468796,
+    "cb9d4e30dbcb378cd1cb8b1bac12bd8546e260a246539b9f2a670c0a8bf306c3"
+]
+
+[[filters]]
+type = "Selection"
+
+
+[filters.check]
+predicate = "all_of"
+
+[[filters.check.argument]]
+predicate = "variant_in"
+argument = ["Mint"]
+
+[[filters.check.argument]]
+predicate = "policy_equals"
+argument = "f0ff48bbb7bbe9d59a40f1ce90e9e9d0ff5002ec48f232b49ca0fb9a"
+
+[sink]
+type = "Logs"
+output_format = "JSONL"
+output_path = "/logoutput/ouralogs"
+max_bytes_per_file = 1_000_000
