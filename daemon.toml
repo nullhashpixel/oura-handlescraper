@@ -6,8 +6,8 @@ magic = "mainnet"
 [source.intersect]
 type = "Point"
 value = [
-    55468796,
-    "cb9d4e30dbcb378cd1cb8b1bac12bd8546e260a246539b9f2a670c0a8bf306c3"
+    47931310,
+    "89f93419845d5f6ce8040fd5eeedda93d764c8569f7c2cc6802a8429a0da877b"
 ]
 
 [[filters]]
