@@ -1,6 +1,6 @@
 [source]
-type = "N2N"
-address = ["Tcp", "relays-new.cardano-mainnet.iohk.io:3001"]
+type = "{type}"
+address = ["{bearer}", "{address}"]
 magic = "mainnet"
 
 [source.intersect]
@@ -29,4 +29,4 @@ argument = "f0ff48bbb7bbe9d59a40f1ce90e9e9d0ff5002ec48f232b49ca0fb9a"
 type = "Logs"
 output_format = "JSONL"
 output_path = "/logoutput/ouralogs"
-max_bytes_per_file = 10_000
+max_bytes_per_file = {maxbytes}
